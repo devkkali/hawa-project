@@ -1,0 +1,24 @@
+{
+  "name": "resultmanagementsystem",
+  "version": "1.0.0",
+  "description": "The system deals with the management of Student details and their scores and grades.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "Riwaj Bhurtel",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "bootstrap": "^5.2.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.6.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

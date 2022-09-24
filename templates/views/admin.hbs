@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/popupform.css" />
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="leftnav">
+            <p style="color: white; padding-left: 5px">Welcome<br> {{username}}</p>
+
+            <img src="https://pu.edu.np/wp-content/uploads/2020/01/pu_logo_new.png" id="PUlogo">
+        </div>
+    </div>
+
+    <div class="workstat">
+        <div class="header">
+
+            <div class="search_bar">
+                <input type="text" id="searchbar" placeholder="Search">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="dynamic-table">
+        <table id="show">
+            <thead>
+                <tr>
+                    <th>Reg. Num.</th>
+                    <th>Exam Roll No.</th>
+                    <th>Name</th>
+                    <th>Program</th>
+                    <th>Semester</th>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+
+    <div class="btn_admin">
+        <button id="add_btn" onclick="openFormAdmin()"><i class="fa-solid-white-large fa-plus "></i>&nbsp;Admin</button>
+    </div>
+
+    <div class="btn_student">
+        <button id="add_btn" onclick="openFormStudent()"><i class="fa-solid-white-large fa-plus "></i>&nbsp;Student</button>
+    </div>
+    {{!-- {{>cards}} --}}
+
+    {{>searchStudent}}
+    {{>popupStudent}}
+    {{>popupAdmin}}
+    {{>footer}}
+
+</body>
+
+</html>

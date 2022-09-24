@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Screen</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/popupform.css">
+</head>
+
+<body>
+    <div class="modal-container-student" id="modal-container-student">
+        <div class="modal">
+            <div class="main-block">
+                <button id="close" onclick="closeFormStudent()"><i class="fa-solid fa-xmark fa-3x"></i></button>
+                <form action="/register" method="POST">
+                    <h1>Add a New Student</h1>
+
+                    <fieldset>
+                        <br><br>
+                        <div class="personal-details">
+                            <div>
+                                <div><label>First Name*</label><input type="text" name="fname" required></div>
+                                <div><label>Middle Name</label><input type="text" name="mname"></div>
+                                <div><label>Last Name*</label><input type="text" name="lname" required></div>
+                            </div>
+                            <div>   
+                                <div><label>Registration No.*</label><input type="text" name="regNum" required></div>
+                                <div><label>Exam Roll No.*</label><input type="text" name="rollNo" required></div>
+                                <div>
+                                    <label>Semester*</label>
+                                    <select name = 'semester'>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" id="submit" href="/">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/popup.js"></script>
+</body>
+
+</html>

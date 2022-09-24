@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+
+    <link rel="stylesheet" href="../public/css/style.css"/>
+</head>
+<body>
+    <div class="modal-container"></div>
+        <form action="/getData" method="post" class="searchStud">
+        
+            <div class="modal">
+                <div class="main-block">
+                    <div class="semester">
+                        <label>Semester</label>
+                        <select name="semester">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="program">
+                        <label>Program</label>
+                        <select name="program">
+                            <option value="CMP">CMP</option>
+                            <option value="ELX">ELX</option>
+                            <option value="ELE">ELE</option>
+                            <option value="CIV">CIV</option>
+                            <option value="CRE">CRE</option>
+                            <option value="SOF">SOF</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button onclick="searchStud()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <table class="dynamic-table">
+            <thead>
+                <th id="sID">RegNum</th>
+                <th id="examRoll">Exam Roll No.</th>
+                <th id="name">Name</th>
+                <th id="year">Year</th>
+                <th id="semester">Semester</th>
+                <th></th>
+                <th></th>
+            </thead>
+        </table>
+    </div>
+   
+
+    <script src="../src/app.js"></script>
+</body>
+</html>

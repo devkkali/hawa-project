@@ -1,0 +1,25 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Management System</title>
+
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+    <form action="/showResult" method="post" class="data">
+        Welcome {{name}}
+        <div class="demoData">
+            <div><label>Name:</label><p name="name"></p></div>
+            <div><label>Semester:</label><p name="sem"></p></div>
+            <div><label>Program:</label><p name="program"></p></div>
+            {{!-- <div><label>Programming Technology:</label><p name="subj1"></p></div> --}}
+            {{studentdata}}
+        </div>
+    </form>
+    <script src="/studentList.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
